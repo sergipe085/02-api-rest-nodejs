@@ -8,5 +8,5 @@
 # Regra de Negocio
 
 - [x] Ao criar uma transacao, o usuario deve selecionar debito (subtraira dinheiro), ou credito (somara dinheiro);
-- [ ] Deve ser possivel identificarmos usuario entre as requisicoes (auth?);
+- [x] Deve ser possivel identificarmos usuario entre as requisicoes (auth?);
 - [ ] O usuario so pode visualizar transacoes dele;
