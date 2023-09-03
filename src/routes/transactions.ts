@@ -30,8 +30,19 @@ export async function transactionsRoutes(app: FastifyInstance) {
 
         const transaction = await knex("transactions").where({
             id,
-            session_id: sessionId
         }).first();
+
+        if (!transaction) {
+            return res.status(400).send({
+                error: "Transacion doesnt exists"
+            })
+        }
+
+        if (transaction.session_id != sessionId) {
+            return res.status(401).send({
+                error: "Unauthorized."
+            })
+        }
 
         return {
             transaction

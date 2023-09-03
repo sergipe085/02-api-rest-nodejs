@@ -9,4 +9,4 @@
 
 - [x] Ao criar uma transacao, o usuario deve selecionar debito (subtraira dinheiro), ou credito (somara dinheiro);
 - [x] Deve ser possivel identificarmos usuario entre as requisicoes (auth?);
-- [ ] O usuario so pode visualizar transacoes dele;
+- [x] O usuario so pode visualizar transacoes dele;
